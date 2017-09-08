@@ -1,0 +1,82 @@
+<!--
+to edit key restriction
+https://console.developers.google.com/apis/credentials?project=testproject-179213
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Stephen Jukes</title>
+        <meta charset="utf-8">
+        <link href="../personal.css" rel="stylesheet" type="text/css">
+				<link href="https://fonts.googleapis.com/css?family=Wire+One" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container" id="contacts">
+            <nav>
+                <h1>Contacts</h1>
+                <ul>
+										<li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <main>
+                <section>
+
+                    <div>Flat 6, Stourton<br>27 Marlborough Road<br>Westbourne<br>Bournemouth<br>Dorset<br>UK<br>BH4 9HU
+                    </div>
+
+                    <div>
+                        <ul>
+            				<li class="landLine">01202 760582</li>
+            				<li class="mobile">+86 137 5646 6313</li>
+            			</ul>
+            			<ul>
+            				<li class="email">dukies_2000@yahoo.com</li>
+            				<li class="skype">(skype address)</li>
+            			</ul>
+                    </div>
+
+
+                    <ul id="socialMedia">
+                        <li id="linkedIn"></li>
+                        <li id="facebook"></li>
+                        <li id="twitter"></li>
+                    </ul>
+
+                </section>
+
+                <div id="map">My map will go here</div>
+            </main>
+
+        </div>
+
+        <div id="googleMap" style="width:100%;height:400px;"></div>
+
+        <script>
+            function myMap() {
+                var address = new google.maps.LatLng(50.720587,-1.897061)
+                var mapOptions = {
+                    center: address,
+                    zoom: 15,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                }
+                var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+                var marker = new google.maps.Marker({
+                  position: address,
+                  map: mapOptions
+                });
+            }
+
+
+
+        </script>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key= AIzaSyBODW0rEDioPEJO3Z8s3DRiMhDO1aNhYdI&callback=myMap"></script>
+    </body>
+</html>
