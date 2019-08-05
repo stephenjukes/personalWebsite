@@ -1,3 +1,3 @@
 # personalWebsite
 
-<a href="stephenjukes.com">View in Browser</a>
+<a href="http://stephenjukes.com">View in Browser</a>
